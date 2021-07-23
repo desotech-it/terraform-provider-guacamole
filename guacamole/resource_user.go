@@ -26,6 +26,11 @@ func guacamoleUser() *schema.Resource {
 				Required:    true,
 				ForceNew:    true,
 			},
+			"password": {
+				Type:        schema.TypeString,
+				Description: "Password of guacamole user",
+				Required:    true,
+			},
 			"last_active": {
 				Type:        schema.TypeString,
 				Description: "Epoch time string of last user activity",
@@ -503,6 +508,7 @@ func convertResourceDataToGuacUser(d *schema.ResourceData) (types.GuacUser, erro
 	var user types.GuacUser
 
 	user.Username = d.Get("username").(string)
+	user.Password = d.Get("password").(string)
 
 	attributeList := d.Get("attributes").([]interface{})
 
