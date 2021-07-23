@@ -40,3 +40,6 @@ terraform
 
 # Ignore test env file
 .env
+
+# Ignore goreleaser output when building locally
+/dist/
