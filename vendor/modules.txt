@@ -54,6 +54,10 @@ github.com/aws/aws-sdk-go/service/sts/stsiface
 github.com/bgentry/go-netrc/netrc
 # github.com/davecgh/go-spew v1.1.1
 github.com/davecgh/go-spew/spew
+# github.com/desotech-it/guacamole-api-client v1.2.14
+## explicit
+github.com/desotech-it/guacamole-api-client
+github.com/desotech-it/guacamole-api-client/types
 # github.com/fatih/color v1.7.0
 github.com/fatih/color
 # github.com/golang/groupcache v0.0.0-20200121045136-8c9f03a8e57e
@@ -167,10 +171,6 @@ github.com/mitchellh/mapstructure
 github.com/mitchellh/reflectwalk
 # github.com/oklog/run v1.0.0
 github.com/oklog/run
-# github.com/techBeck03/guacamole-api-client v1.2.13
-## explicit
-github.com/techBeck03/guacamole-api-client
-github.com/techBeck03/guacamole-api-client/types
 # github.com/ulikunitz/xz v0.5.8
 github.com/ulikunitz/xz
 github.com/ulikunitz/xz/internal/hash

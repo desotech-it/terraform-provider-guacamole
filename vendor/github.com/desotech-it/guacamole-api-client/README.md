@@ -4,7 +4,7 @@ This go-based client is intended to be used as an sdk for the [Apache Guacamole]
 
 The primary intent of this sdk is to be used with the following Terraform provider:
 
-https://registry.terraform.io/providers/techBeck03/guacamole/latest
+https://registry.terraform.io/providers/desotech-it/guacamole/latest
 
 Be sure to checkout the release that matches the version of Guacamole you are running.  The developement of this sdk started with the Guacamole 1.2.0 release so no prior releases are currently supported.
 
@@ -19,8 +19,8 @@ package main
 import (
 	"fmt"
 
-	guac "github.com/techBeck03/guacamole-api-client"
-	"github.com/techBeck03/guacamole-api-client/types"
+	guac "github.com/desotech-it/guacamole-api-client"
+	"github.com/desotech-it/guacamole-api-client/types"
 )
 
 func main() {
