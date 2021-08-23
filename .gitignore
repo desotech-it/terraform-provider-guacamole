@@ -43,3 +43,6 @@ terraform
 
 # Ignore goreleaser output when building locally
 /dist/
+
+# Allow everything in vendor
+!vendor/**
