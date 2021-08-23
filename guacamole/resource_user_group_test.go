@@ -6,8 +6,8 @@ import (
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/resource"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/terraform"
-	guac "github.com/techBeck03/guacamole-api-client"
-	types "github.com/techBeck03/guacamole-api-client/types"
+	guac "github.com/desotech-it/guacamole-api-client"
+	types "github.com/desotech-it/guacamole-api-client/types"
 )
 
 var testProviderUserGroup = map[string]interface{}{

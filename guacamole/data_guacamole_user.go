@@ -6,7 +6,7 @@ import (
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	guac "github.com/techBeck03/guacamole-api-client"
+	guac "github.com/desotech-it/guacamole-api-client"
 )
 
 func dataSourceUser() *schema.Resource {
