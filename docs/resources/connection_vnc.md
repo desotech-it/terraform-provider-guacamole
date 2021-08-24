@@ -106,4 +106,4 @@ resource "guacamole_connection_vnc" "vnc" {
 #### Base
 - `identifier` -  (string) Numeric identifier of the vnc connection
 - `protocol` -  (string) protocol of the connection (`vnc`)
-- `active_connections` - (sting) Number of active connections for the group
+- `active_connections` - (string) Number of active connections for the group

@@ -46,4 +46,4 @@ In addition to all the arguments above, the following attributes are exported.
 
 #### Base
 - `identifier` -  (string) numeric identifier of the connection group
-- `active_connections` - (sting) number of active connections for the group
+- `active_connections` - (string) number of active connections for the group

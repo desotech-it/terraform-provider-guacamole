@@ -34,7 +34,7 @@ The following attributes are exported.
 - `identifier` -  (string) Numeric identifier of the ssh connection
 - `parent_identifier` -  (string) Numeric identifier of the parent connection
 - `protocol` -  (string) protocol of the connection (`ssh`).
-- `active_connections` - (sting) Number of active connections for the group
+- `active_connections` - (string) Number of active connections for the group
 
 
 ### Attributes

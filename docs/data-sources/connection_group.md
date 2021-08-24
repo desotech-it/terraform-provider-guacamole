@@ -36,7 +36,7 @@ The following attributes are exported.
 - `type` -  (string) type of connection group.  Value should be on of:
   - `ORGANIZATIONAL`
   - `BALANCING`
-- `active_connections` - (sting) number of active connections for the group
+- `active_connections` - (string) number of active connections for the group
 - `member_connections` - (List) list of connection identifiers whose parent is this connection group
 - `member_connection_groups` - (List) list of connection group identifiers whose parent is this user group
 

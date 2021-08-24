@@ -124,4 +124,4 @@ In addition to all the arguments above, the following attributes are exported.
 #### Base
 - `identifier` -  (string) Numeric identifier of the telnet connection
 - `protocol` -  (string) protocol of the connection (`telnet`)
-- `active_connections` - (sting) Number of active connections for the group
+- `active_connections` - (string) Number of active connections for the group
