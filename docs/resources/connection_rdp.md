@@ -49,9 +49,9 @@ resource "guacamole_connection_rdp" "rdp" {
 
 - `max_connections` - (string) max allowed connections
 - `max_connections_per_user` - (string) max allowed connections per user
-- `weigth` - (string) connectivity weight
+- `weight` - (string) connectivity weight
 - `failover_only` - (bool) used for failover only
-- `guacd_hostnmae` - (string) guacamole proxy hostname
+- `guacd_hostname` - (string) guacamole proxy hostname
 - `guacd_port` - (string) guacamole proxy port
 - `guacd_encryption` - (string) guacamole proxy encryption type:  Value should be on of:
   - `none`
@@ -64,6 +64,7 @@ resource "guacamole_connection_rdp" "rdp" {
 - `port` - (string) port
 #### *Authentication*
 - `username` - (string) username
+- `password` - (string) password
 - `domain` - (string) active directory domain name
 - `security_mode` - (string) security mode.  Value should be on of:
   - `any`
@@ -126,7 +127,7 @@ resource "guacamole_connection_rdp" "rdp" {
 - `enable_drive` - (bool) enable drive
 - `drive_name` - (string) drive name
 - `disable_file_download` - (bool) disable file download
-- `diable_file_upload` - (bool) disable file upload
+- `disable_file_upload` - (bool) disable file upload
 - `drive_path` - (string) drive path
 - `create_drive_path` - (bool) automatically create drive
 - `static_channels` - (string) static channel names
@@ -138,7 +139,7 @@ resource "guacamole_connection_rdp" "rdp" {
 - `enable_desktop_composition` - (bool) enable desktop composition (Aero)
 - `enable_menu_animations` - (bool) enable menu animations
 - `disable_bitmap_caching` - (bool) disable bitmap caching
-- `disable_offscreen_caching` - (bool) diable off-screen caching
+- `disable_offscreen_caching` - (bool) disable off-screen caching
 - `disable_glyph_caching` - (bool) disable glyph caching
 #### *RemoteApp*
 - `remote_app` - (string) program
@@ -168,7 +169,7 @@ resource "guacamole_connection_rdp" "rdp" {
 - `sftp_root_directory` - (string) file browser root directory
 - `sftp_upload_directory` - (string) default upload directory
 - `sftp_keepalive_interval` - (string) SFTP keepalive interval
-- `sftp_dsiable_file_download` - (bool) disable file download
+- `sftp_disable_file_download` - (bool) disable file download
 - `sftp_disable_file_upload` - (bool) disable file upload
 #### *Wake-on-LAN (WOL)*
 - `wol_send_packet` - (bool) send WoL packet
@@ -184,3 +185,11 @@ In addition to all the arguments above, the following attributes are exported.
 - `identifier` -  (string) Numeric identifier of the rdp connection
 - `protocol` -  (string) protocol of the connection (`rdp`)
 - `active_connections` - (string) Number of active connections for the group
+
+## Import
+
+RDP connection can be imported using the `resource id`, e.g.
+
+```shell
+terraform import guacamole_connection_rdp.rdp 2
+```

@@ -43,9 +43,9 @@ resource "guacamole_connection_telnet" "telnet" {
 
 - `max_connections` - (string) max allowed connections
 - `max_connections_per_user` - (string) max allowed connections per user
-- `weigth` - (string) connectivity weight
+- `weight` - (string) connectivity weight
 - `failover_only` - (bool) used for failover only
-- `guacd_hostnmae` - (string) guacamole proxy hostname
+- `guacd_hostname` - (string) guacamole proxy hostname
 - `guacd_port` - (string) guacamole proxy port
 - `guacd_encryption` - (string) guacamole proxy encryption type:  Value should be on of:
   - `none`
@@ -58,6 +58,7 @@ resource "guacamole_connection_telnet" "telnet" {
 - `port` - (string) port
 #### *Authentication*
 - `username` - (string) username
+- `password` - (string) password
 - `username_regex` - (string) username regular expression
 - `password_regex` - (string) password regular expression
 - `login_success_regex` - (string) login success regular expression
@@ -125,3 +126,11 @@ In addition to all the arguments above, the following attributes are exported.
 - `identifier` -  (string) Numeric identifier of the telnet connection
 - `protocol` -  (string) protocol of the connection (`telnet`)
 - `active_connections` - (string) Number of active connections for the group
+
+## Import
+
+Telnet connection can be imported using the `resource id`, e.g.
+
+```shell
+terraform import guacamole_connection_telnet.telnet 4
+```

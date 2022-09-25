@@ -41,9 +41,9 @@ resource "guacamole_connection_vnc" "vnc" {
 
 - `max_connections` - (string) max allowed connections
 - `max_connections_per_user` - (string) max allowed connections per user
-- `weigth` - (string) connectivity weight
+- `weight` - (string) connectivity weight
 - `failover_only` - (bool) used for failover only
-- `guacd_hostnmae` - (string) guacamole proxy hostname
+- `guacd_hostname` - (string) guacamole proxy hostname
 - `guacd_port` - (string) guacamole proxy port
 - `guacd_encryption` - (string) guacamole proxy encryption type:  Value should be on of:
   - `none`
@@ -56,6 +56,7 @@ resource "guacamole_connection_vnc" "vnc" {
 - `port` - (string) port
 #### *Authentication*
 - `username` - (string) username
+- `password` - (string) password
 #### *Display*
 - `readonly` - (bool) display is read-only
 - `swap_red_blue` - (bool) swap red/blue components
@@ -92,7 +93,7 @@ resource "guacamole_connection_vnc" "vnc" {
 - `sftp_root_directory` - (string) file browser root directory
 - `sftp_upload_directory` - (string) default upload directory
 - `sftp_keepalive_interval` - (string) SFTP keepalive interval
-- `sftp_dsiable_file_download` - (bool) disable file download
+- `sftp_disable_file_download` - (bool) disable file download
 - `sftp_disable_file_upload` - (bool) disable file upload
 #### Audio
 - `enable_audio` - (bool) enable audio
@@ -107,3 +108,11 @@ resource "guacamole_connection_vnc" "vnc" {
 - `identifier` -  (string) Numeric identifier of the vnc connection
 - `protocol` -  (string) protocol of the connection (`vnc`)
 - `active_connections` - (string) Number of active connections for the group
+
+## Import
+
+VNC connection can be imported using the `resource id`, e.g.
+
+```shell
+terraform import guacamole_connection_vnc.vnc 2
+```
