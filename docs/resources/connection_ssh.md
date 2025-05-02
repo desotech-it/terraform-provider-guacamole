@@ -109,7 +109,7 @@ resource "guacamole_connection_ssh" "ssh" {
   - `vt100`
   - `vt220`
   - `xterm`
-  - `xterm-25color`
+  - `xterm-256color`
 #### *Typescript (Text Session Recording)*
 - `typescript_path` - (string) typescript path
 - `typescript_name` - (string) typescript name
